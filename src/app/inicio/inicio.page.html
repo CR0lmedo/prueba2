@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button>
+    <ion-back-button></ion-back-button>
+  </ion-button>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div ngIf="formulario" >
+    <form action=""
+    [formGroup]="formulario"
+    (ngSubmit)="enviar()"  >
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-label>usuario</ion-label>
+            <ion-input formControlName="username"></ion-input>
+          </ion-col>
+        </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-label>contraseña</ion-label>
+            <ion-input formControlName="password"></ion-input>
+          </ion-col>
+        </ion-row>
+
+
+      </ion-grid>
+
+
+
+
+
+
+    </form>
+  </div>
+
+</ion-content>
